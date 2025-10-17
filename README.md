@@ -1,6 +1,6 @@
 # Minkyoo Song · Curriculum Vitae
 
-This repository hosts the academic CV website for **Minkyoo Song**, a Ph.D. candidate in Electrical Engineering at KAIST. The site is a static, single-page experience optimised for clarity and quick navigation of research output, experience, and achievements.
+This repository hosts the academic CV website for **Minkyoo Song**, a Ph.D. candidate in Electrical Engineering at KAIST. 
 
 ## Structure
 

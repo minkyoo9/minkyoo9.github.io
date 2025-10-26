@@ -418,6 +418,16 @@ main {
     width: min(100%, calc(100% - 2rem));
   }
 
+  .hero-content {
+   display: flex;
+   flex-direction: column;
+  gap: 1.5rem;
+  }
+  .hero-aside {
+   order: -1;
+   align-items: center;
+  }
+
   .hero-copy {
     padding: 1.75rem;
   }

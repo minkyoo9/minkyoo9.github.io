@@ -17,6 +17,18 @@ minorStyle.textContent = `
     width: 100%;
   }
 
+  .portrait {
+    padding: 10%;
+    background: #ffffff;
+  }
+
+  .portrait img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
   .section-heading h2 {
     color: var(--accent);
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;

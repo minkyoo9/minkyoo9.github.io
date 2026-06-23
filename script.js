@@ -9,6 +9,12 @@ minorStyle.textContent = `
     align-items: start;
   }
 
+  .hero-aside {
+    justify-self: end;
+    max-width: 380px;
+    width: 100%;
+  }
+
   .section-heading h2 {
     color: var(--accent);
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;

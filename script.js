@@ -142,7 +142,7 @@ if (experienceTimeline && !experienceTimeline.querySelector("[data-service='revi
       items: [
         "IEEE Transactions on Information Forensics and Security (TIFS)",
         "IEEE Transactions on Dependable and Secure Computing (TDSC)",
-        "The Web Conference (WWW) 2024",
+        "The ACM Web Conference (WWW) 2024",
         "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2024",
         "ACL Rolling Review (ARR) 2024, 2025",
       ],
@@ -150,7 +150,7 @@ if (experienceTimeline && !experienceTimeline.querySelector("[data-service='revi
     {
       title: "External Reviewer",
       items: [
-        "The Web Conference (WWW) 2025-2026",
+        "The ACM Web Conference (WWW) 2025-2026",
         "ACM Conference on Computer and Communications Security (CCS) 2025",
         "IEEE International Conference on Distributed Computing Systems (ICDCS) 2025-2026",
         "International Symposium on Research in Attacks, Intrusions and Defenses (RAID) 2025-2026",

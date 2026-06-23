@@ -3,412 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minkyoo Song · Curriculum Vitae</title>
-  <meta name="description" content="Curriculum Vitae of Minkyoo Song, Ph.D. candidate in Electrical Engineering at KAIST." />
+  <title>Minkyoo Song - Curriculum Vitae</title>
+  <meta name="description" content="Curriculum Vitae of Minkyoo Song, Ph.D. student in Electrical Engineering at KAIST NSS Lab." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
     <header class="site-header" id="top">
-      <div class="container">
-        <div class="header-inner">
-          <a class="brand" href="#top">Minkyoo Song</a>
-          <nav class="site-nav" aria-label="Primary navigation">
-            <a href="#about">About</a>
-            <a href="#publications">Publications</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#awards">Awards</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
+      <div class="container header-inner">
+        <a class="brand" href="#top">Minkyoo Song</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#research">Research</a>
+          <a href="#education">Education</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#awards">Awards</a>
+          <a href="#languages">Languages</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
     </header>
 
-    <main class="container" aria-label="Curriculum Vitae">
-      <section class="section hero" id="about">
-        <div class="hero-content">
+    <main>
+      <section class="hero" id="about" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
           <div class="hero-copy">
-            <h1 class="headline">Minkyoo Song</h1>
-            <p class="subheadline">
-              Ph.D. Candidate in Electrical Engineering at the <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noreferrer">Network &amp; System Security (NSS) Lab</a>, KAIST<br />
-              Daejeon, South Korea <br />
-              Advisor: <a href="https://nss.kaist.ac.kr/?page_id=29" target="_blank" rel="noreferrer">Prof. Seungwon Shin</a>
+            <p class="eyebrow">Curriculum Vitae</p>
+            <h1 id="hero-heading">Minkyoo Song</h1>
+            <p class="hero-subtitle">
+              Ph.D. Student in Electrical Engineering at the
+              <a href="https://nss.kaist.ac.kr/" target="_blank" rel="noreferrer">Network and System Security Lab</a>,
+              KAIST. Advisor:
+              <a href="https://nss.kaist.ac.kr/?page_id=29" target="_blank" rel="noreferrer">Prof. Seungwon Shin</a>.
             </p>
-            <p>
-              I study the safety and security of large language models and data-driven security systems, with a focus on adversarial ML. My research identifies vulnerabilities in emerging AI paradigms and develops defenses for robust deployment, while applying AI to real-world cybersecurity problems.
-              
+            <p class="hero-summary">
+              I work on LLM security, AI for security, data-driven security, and social network analysis, with a focus on understanding vulnerabilities in modern AI systems and building defenses for practical deployment.
             </p>
-            <div class="cta-group" role="group" aria-label="Contact links">
-              <a class="chip" href="mailto:minkyoo9@kaist.ac.kr" aria-label="Send an email to Minkyoo Song"><span class="icon">@</span> Email</a>
-              <a class="chip" href="assets/cv.pdf" target="_blank" rel="noreferrer" aria-label="Open Minkyoo Song's CV">
-                <span class="icon">📄</span> CV
-              </a>
-              <a class="chip" href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
-                <span class="icon">📚</span> Google Scholar
-              </a>
-              <a class="chip" href="https://www.linkedin.com/in/minkyoo-song-366aa7348/" target="_blank" rel="noreferrer">
-                <span class="icon">in</span> LinkedIn
-              </a>
+            <div class="link-row" aria-label="Profile links">
+              <a class="button primary" href="assets/cv.pdf" target="_blank" rel="noreferrer">CV PDF</a>
+              <a class="button" href="mailto:minkyoo9@kaist.ac.kr">Mail</a>
+              <a class="button" href="https://www.linkedin.com/in/minkyoo-song-366aa7348/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button" href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
             </div>
-            <p class="meta">Last updated: January 2026</p>
+            <p class="updated">Last update: January 2026</p>
           </div>
-          <div class="hero-aside">
-            <figure class="hero-portrait" aria-labelledby="hero-portrait-caption">
-              <img src="assets/minkyoo-song.jpg" alt="Portrait of Minkyoo Song" loading="lazy" />
-              <figcaption id="hero-portrait-caption" class="visually-hidden">Portrait of Minkyoo Song</figcaption>
+          <aside class="hero-aside" aria-label="Profile summary">
+            <figure class="portrait">
+              <img src="assets/minkyoo-song.jpg" alt="Portrait of Minkyoo Song" />
             </figure>
-            <aside class="card interests" aria-labelledby="research-interests">
-              <h2 class="card-title" id="research-interests">
-                <span class="icon">⚖️</span> Research Interests
-              </h2>
-              <ul>
-                <li>LLM Security</li>
-                <li>AI for Security</li>
-                <li>Data-driven Security</li>
-                <li>Social Network Analysis</li>
-              </ul>
-            </aside>
+            <div class="quick-card">
+              <dl>
+                <div><dt>Affiliation</dt><dd>KAIST NSS Lab</dd></div>
+                <div><dt>Location</dt><dd>Daejeon, South Korea</dd></div>
+                <div><dt>Degree</dt><dd>Ph.D. expected February 2027</dd></div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section compact-section" id="research" aria-labelledby="research-heading">
+        <div class="container section-grid">
+          <div class="section-heading"><p class="eyebrow">Research Interest</p><h2 id="research-heading">Research areas</h2></div>
+          <ul class="interest-list">
+            <li>LLM Security</li><li>AI for Security</li><li>Data-driven Security</li><li>Social Network Analysis</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-heading">
+        <div class="container section-grid">
+          <div class="section-heading"><p class="eyebrow">Education</p><h2 id="education-heading">Academic background</h2></div>
+          <div class="timeline">
+            <article class="entry-card"><div class="entry-head"><h3>Korea Advanced Institute of Science and Technology (KAIST)</h3><p>March 2023 - February 2027 (estimated)</p></div><p>Ph.D. Student in Electrical Engineering, Network and System Security Lab. Advisor: Seungwon Shin.</p><p class="entry-location">Daejeon, South Korea</p></article>
+            <article class="entry-card"><div class="entry-head"><h3>Korea Advanced Institute of Science and Technology (KAIST)</h3><p>March 2021 - February 2023</p></div><p>M.S. in Electrical Engineering, Network and System Security Lab. Advisor: Seungwon Shin.</p><p class="entry-location">Daejeon, South Korea</p></article>
+            <article class="entry-card"><div class="entry-head"><h3>Korea Advanced Institute of Science and Technology (KAIST)</h3><p>March 2016 - February 2021</p></div><p>B.S. in Industrial and Systems Engineering, double majored in Electrical Engineering.</p><p class="entry-location">Daejeon, South Korea</p></article>
           </div>
         </div>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-heading">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="icon">📰</span>
-            <span id="publications-heading">Publications</span>
-            <span style="font-size:0.85rem; font-weight:400; color:var(--muted); margin-left:0.5rem;">
-              [C]: conference, [J]: journal, [U]: under review
-            </span>
-          </h2>
-        </div>
-
-        <ol class="pub-list">
-          <li>
-            <span class="pub-label">[C]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">J. Kim, <span class="highlight">M. Song</span>, S. Shin, S. Son.</p>
-              <p class="pub-title">
-                <a href="https://arxiv.org/abs/2509.22745" target="_blank" rel="noreferrer"><strong>SafeMoE: Safe Fine-Tuning for MoE LLMs by Aligning Harmful Input Routing</strong></a>.
-              </p>
-              <p class="pub-venue"><em>The Fourteenth International Conference on Learning Representations (<strong>ICLR 2026</strong>)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[C]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">J. Kim, S.H. Na, <span class="highlight">M. Song</span>, S. Shin, S. Son.</p>
-              <p class="pub-title">
-                <a href="https://wsp-lab.github.io/papers/kim-moevil-acsac25.pdf" target="_blank" rel="noreferrer"><strong>MoEvil: Poisoning Expert to Compromise the Safety of Mixture-of-Experts LLMs</strong></a>.
-              </p>
-              <p class="pub-venue"><em>2025 Annual Computer Security Applications Conference (<strong>ACSAC 2025</strong>, <span style="color: red; font-weight: bold;">Distinguished Paper</span>)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[C]</span>
-            <div class="pub-entry">
-              <p class="pub-authors"><span class="highlight">M. Song</span>, H. Kim, J. Kim, S. Shin, S. Son.</p>
-              <p class="pub-title">
-                <a href="https://www.usenix.org/conference/usenixsecurity25/presentation/song-minkyoo" target="_blank" rel="noreferrer"><strong>Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models</strong></a>.
-              </p>
-              <p class="pub-venue"><em>34th USENIX Security Symposium (<strong>USENIX Security 2025</strong>)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[C]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">H. Kim, <span class="highlight">M. Song</span>, S.H. Na, S. Shin, K. Lee.</p>
-              <p class="pub-title">
-                <a href="https://www.usenix.org/conference/usenixsecurity25/presentation/kim-hanna" target="_blank" rel="noreferrer"><strong>When LLMs Go Online: The Emerging Threat of Web-Enabled LLMs</strong></a>.
-              </p>
-              <p class="pub-venue"><em>34th USENIX Security Symposium (<strong>USENIX Security 2025</strong>)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[C]</span>
-            <div class="pub-entry">
-              <p class="pub-authors"><span class="highlight">M. Song</span>, H. Kim, J. Kim, Y. Jin, S. Shin.</p>
-              <p class="pub-title">
-                <a href="https://aclanthology.org/2025.findings-naacl.64/" target="_blank" rel="noreferrer"><strong>Claim-Guided Textual Backdoor Attack for Practical Applications</strong></a>.
-              </p>
-              <p class="pub-venue"><em>The 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (<strong>NACCL 2025 Findings</strong>)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[C]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">J. Kim, <span class="highlight">M. Song</span>, S.H. Na, S. Shin.</p>
-              <p class="pub-title">
-                <a href="https://aclanthology.org/2025.findings-naacl.71/" target="_blank" rel="noreferrer"><strong>Obliviate: Neutralizing Task-Agnostic Backdoors within the Parameter-Efficient Fine-Tuning Paradigm</strong></a>.
-              </p>
-              <p class="pub-venue"><em>The 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (<strong>NACCL 2025 Findings</strong>)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[C]</span>
-            <div class="pub-entry">
-              <p class="pub-authors"><span class="highlight">M. Song</span>, E. Jang, J. Kim, S. Shin.</p>
-              <p class="pub-title">
-                <a href="https://dl.acm.org/doi/10.1145/3690624.3709183" target="_blank" rel="noreferrer"><strong>Covering Cracks in Content Moderation: Delexicalized Distant Supervision for Illicit Drug Jargon Detection</strong></a>.
-              </p>
-              <p class="pub-venue"><em>31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (<strong>KDD 2025</strong>)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[C]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">J. Kim, <span class="highlight">M. Song</span>, M. Seo, Y. Jin, S. Shin.</p>
-              <p class="pub-title">
-                <a href="https://ieeexplore.ieee.org/document/10646687?reason=concurrency" target="_blank" rel="noreferrer"><strong>PassREfinder: Credential Stuffing Risk Prediction by Representing Password Reuse between Websites on a Graph</strong></a>.
-              </p>
-              <p class="pub-venue"><em>2024 IEEE Symposium on Security and Privacy (SP) (<strong>S&amp;P 2024</strong>)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[J]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">J. Kim, <span class="highlight">M. Song</span>, M. Seo, Y. Jin, S. Shin, J. Kim.</p>
-              <p class="pub-title">
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425036954" target="_blank" rel="noreferrer"><strong>PassREfinder-FL: Privacy-Preserving Credential Stuffing Risk Prediction via Graph-Based Federated Learning for Representing Password Reuse between Websites</strong></a>.
-              </p>
-              <p class="pub-venue"><em>Elsevier Expert Systems with Applications (ESWA) </em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[J]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">J. Choi, J. Kim, <span class="highlight">M. Song</span>, H. Kim, N. Park, M. Seo, Y. Jin, S. Shin.</p>
-              <p class="pub-title">
-                <a href="https://globals.ieice.org/en_transactions/information/10.1587/transinf.2021EDP7182/_p" target="_blank" rel="noreferrer"><strong>A Large-Scale Bitcoin Abuse Measurement and Clustering Analysis Utilizing Public Reports</strong></a>.
-              </p>
-              <p class="pub-venue"><em>IEICE Transactions on Information and Systems</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[U]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">K. Kim, J. Cui, <span class="highlight">M. Song</span>, S. Shin.</p>
-              <p class="pub-title">
-                <a href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><strong>Exploring the Familiar Taste of Toxicity: A Causal Influence Analysis of Toxic Comments on Internet Forums</strong></a>.
-              </p>
-              <p class="pub-venue"><em>Invited to Major Revision at IEEE Transactions on Knowledge and Data Engineering (TKDE)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[U]</span>
-            <div class="pub-entry"> 
-              <p class="pub-authors">W. Choi*, M. Seo*, <span class="highlight">M. Song</span>, H. Heo, S. Shin, M. You.</p>
-              <p class="pub-title">
-                <a href="https://arxiv.org/abs/2601.05150" target="_blank" rel="noreferrer"><strong>PC^2: Politically Controversial Content Generation via Jailbreaking Attacks on GPT-based Text-to-Image Models</strong></a>.
-              </p>
-              <p class="pub-venue"><em>Submitted to 33rd ACM Conference on Computer and Communications Security (CCS 2026)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[U]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">K. Kim, S.H. Na, <span class="highlight">M. Song</span>, S. Shin.</p>
-              <p class="pub-title">
-                <a href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><strong>Global Meta-path-level Counterfactual Explanation for Heterogeneous Graph Neural Networks by Path Exclusion</strong></a>.
-              </p>
-              <p class="pub-venue"><em>Submitted to 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2026)</em></p>
-            </div>
-          </li>
-          <li>
-            <span class="pub-label">[U]</span>
-            <div class="pub-entry">
-              <p class="pub-authors">J. Kim, M. Seo, <span class="highlight">M. Song</span>, S. Shin, J. Kim.</p>
-              <p class="pub-title">
-                <a href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer"><strong>To Make Each Account Count: Exploring Credential Data Breach Threats through Victim-driven Analysis</strong></a>.
-              </p>
-              <p class="pub-venue"><em>Submitted to IEEE Transactions on Information Forensics and Security (TIFS)</em></p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="section" id="experience" aria-labelledby="experience-heading">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="icon">🌐</span>
-            <span id="experience-heading">Professional Experience</span>
-          </h2>
-        </div>
-        <ul class="card-list">
-          <li>
-            <div class="card-header">
-              <p class="card-title">S2W · Research Intern, AI Team</p>
-              <p class="card-meta">Jul 2022 – Feb 2023 · South Korea</p>
-            </div>
-            <ul class="detail-list">
-              <li>Developed an LLM-based content moderation framework for illicit drug jargon detection, capturing contextual and lexical cues.</li>
-            </ul>
-          </li>
-          <li>
-            <div class="card-header">
-              <p class="card-title">Reviewer</p>
-              <p class="card-meta">2024 – 2025</p>
-            </div>
-            <ul class="detail-list">
-              <li>The Web Conference (WWW) 2024</li>
-              <li>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2024</li>
-              <li>ACL Rolling Review (ARR) 2024, 2025</li>
-            </ul>
-          </li>
-          <li>
-            <div class="card-header">
-              <p class="card-title">External Reviewer</p>
-              <p class="card-meta">2025</p>
-            </div>
-            <ul class="detail-list">
-              <li>The Web Conference (WWW) 2025</li>
-              <li>ACM Conference on Computer and Communications Security (CCS) 2025</li>
-              <li>IEEE International Conference on Distributed Computing Systems (ICDCS) 2025</li>
-              <li>International Symposium on Research in Attacks, Intrusions and Defenses (RAID) 2025</li>
-              <li>Annual Computer Security Applications Conference (ACSAC) 2025</li>
-            </ul>
-          </li>
-          <li>
-            <div class="card-header">
-              <p class="card-title">KAIST Data Intelligence Laboratory · Undergraduate Research Intern</p>
-              <p class="card-meta">Jan 2020 – Jun 2020 · South Korea</p>
-            </div>
-            <ul class="detail-list">
-              <li>Conducted big data mining on COVID-19 datasets to surface actionable insights.</li>
-            </ul>
-          </li>
-          <li>
-            <div class="card-header">
-              <p class="card-title">KAIST Data Mining Laboratory · Undergraduate Research Intern</p>
-              <p class="card-meta">Jul 2019 – Aug 2019 · South Korea</p>
-            </div>
-            <ul class="detail-list">
-              <li>Investigated abnormal node detection in bipartite networks via butterfly counting.</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section class="section" id="education" aria-labelledby="education-heading">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="icon">🎓</span>
-            <span id="education-heading">Education</span>
-          </h2>
-        </div>
-        <ul class="card-list">
-          <li>
-            <div class="card-header">
-              <p class="card-title">Korea Advanced Institute of Science and Technology (KAIST)</p>
-              <p class="card-meta">Mar 2023 – Present · Daejeon, South Korea</p>
-            </div>
-            <p class="card-description">Ph.D. Student in Electrical Engineering, NSS Lab — Advisor: Prof. Seungwon Shin</p>
-          </li>
-          <li>
-            <div class="card-header">
-              <p class="card-title">Korea Advanced Institute of Science and Technology (KAIST)</p>
-              <p class="card-meta">Mar 2021 – Feb 2023 · Daejeon, South Korea</p>
-            </div>
-            <p class="card-description">M.S. in Electrical Engineering, NSS Lab — Advisor: Prof. Seungwon Shin</p>
-          </li>
-          <li>
-            <div class="card-header">
-              <p class="card-title">Korea Advanced Institute of Science and Technology (KAIST)</p>
-              <p class="card-meta">Mar 2016 – Feb 2021 · Daejeon, South Korea</p>
-            </div>
-            <p class="card-description">B.S. in Industrial &amp; Systems Engineering; Double Major in Electrical Engineering</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="section" id="awards" aria-labelledby="awards-heading">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="icon">🏅</span>
-            <span id="awards-heading">Honors &amp; Awards</span>
-          </h2>
-        </div>
-        <ul class="grid-list">
-          <li>
-            <p class="card-title">4th Prize, Cybersecurity Paper Competition</p>
-            <p class="card-meta">Korean Association of Cybersecurity Studies, 2025</p>
-            <p class="card-description">Poisoning Expert to Compromise the Safety of Mixture-of-Experts LLMs</p>
-          </li>
-          <li>
-            <p class="card-title">2nd Prize, Cybersecurity Paper Competition</p>
-            <p class="card-meta">Korean Association of Cybersecurity Studies, 2023</p>
-            <p class="card-description">Graph-based Deep Learning Framework for Credential Stuffing Risk Prediction</p>
-          </li>
-          <li>
-            <p class="card-title">4th Prize, Cybersecurity Paper Competition</p>
-            <p class="card-meta">Korean Association of Cybersecurity Studies, 2023</p>
-            <p class="card-description">Delexicalized Distant Supervision for Illicit Drug Jargon Detection</p>
-          </li>
-          <li>
-            <p class="card-title">4th Prize, Cybersecurity Paper Competition</p>
-            <p class="card-meta">Korean Association of Cybersecurity Studies, 2023</p>
-            <p class="card-description">Understanding the Occurrence and Impact of Credential Data Breach</p>
-          </li>
-          <li>
-            <p class="card-title">Cum Laude</p>
-            <p class="card-meta">KAIST, 2021</p>
-          </li>
-          <li>
-            <p class="card-title">Academic Achievement Award: Salutatorian</p>
-            <p class="card-meta">KAIST, Spring 2019</p>
-          </li>
-          <li>
-            <p class="card-title">Dean’s List</p>
-            <p class="card-meta">Industrial &amp; Systems Engineering, KAIST, Spring 2019</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="section" id="languages" aria-labelledby="languages-heading">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="icon">🌐</span>
-            <span id="languages-heading">Languages</span>
-          </h2>
-        </div>
-        <ul class="card-list two-column">
-          <li>
-            <p class="card-title">Korean</p>
-            <p class="card-meta">Native proficiency</p>
-          </li>
-          <li>
-            <p class="card-title">English</p>
-            <p class="card-meta">Fluent</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="section" id="contact" aria-labelledby="contact-heading">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="icon">✉️</span>
-            <span id="contact-heading">Contact</span>
-          </h2>
-        </div>
-        <div class="card contact-card">
-          <p>For collaborations or inquiries, please use the channels below.</p>
-          <div class="cta-group">
-            <a class="chip" href="mailto:minkyoo9@kaist.ac.kr" aria-label="Send an email to Minkyoo Song"><span class="icon">@</span> Email</a>
-            <a class="chip" href="https://www.linkedin.com/in/minkyoo-song-366aa7348/" target="_blank" rel="noreferrer"><span class="icon">in</span> LinkedIn</a>
+        <div class="container">
+          <div class="section-heading publication-heading">
+            <div><p class="eyebrow">Publications</p><h2 id="publications-heading">Publications</h2><p class="section-note">[C]: Conference, [J]: Journal, [U]: Under Review</p></div>
+            <div class="filter-group" role="group" aria-label="Publication filters"><button class="filter-button active" type="button" data-filter="all">All</button><button class="filter-button" type="button" data-filter="conference">C</button><button class="filter-button" type="button" data-filter="journal">J</button><button class="filter-button" type="button" data-filter="review">U</button></div>
           </div>
+          <ol class="publication-list">
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors">W. Choi*, M. Seo*, <strong>M. Song</strong>, H. Heo, S. Shin, M. You.</p><h3><a href="https://arxiv.org/abs/2601.05150" target="_blank" rel="noreferrer">PC^2: Politically Controversial Content Generation via Jailbreaking Attacks on GPT-based Text-to-Image Models</a></h3><p class="pub-venue">33rd ACM Conference on Computer and Communications Security (CCS 2026)</p></div></li>
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors">J. Kim, <strong>M. Song</strong>, S. Shin, S. Son.</p><h3><a href="https://arxiv.org/abs/2509.22745" target="_blank" rel="noreferrer">SafeMoE: Safe Fine-Tuning for MoE LLMs by Aligning Harmful Input Routing</a></h3><p class="pub-venue">The Fourteenth International Conference on Learning Representations (ICLR 2026)</p></div></li>
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors">J. Kim, S.H. Na, <strong>M. Song</strong>, S. Shin, S. Son.</p><h3><a href="https://wsp-lab.github.io/papers/kim-moevil-acsac25.pdf" target="_blank" rel="noreferrer">MoEvil: Poisoning Expert to Compromise the Safety of Mixture-of-Experts LLMs</a></h3><p class="pub-venue">2025 Annual Computer Security Applications Conference (ACSAC 2025). Distinguished Paper Award.</p></div></li>
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors"><strong>M. Song</strong>, H. Kim, J. Kim, S. Shin, S. Son.</p><h3><a href="https://www.usenix.org/conference/usenixsecurity25/presentation/song-minkyoo" target="_blank" rel="noreferrer">Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models</a></h3><p class="pub-venue">34th USENIX Security Symposium (SECURITY 2025)</p></div></li>
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors">H. Kim, <strong>M. Song</strong>, S.H. Na, S. Shin, K. Lee.</p><h3><a href="https://www.usenix.org/conference/usenixsecurity25/presentation/kim-hanna" target="_blank" rel="noreferrer">When LLMs Go Online: The Emerging Threat of Web-Enabled LLMs</a></h3><p class="pub-venue">34th USENIX Security Symposium (SECURITY 2025)</p></div></li>
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors"><strong>M. Song</strong>, H. Kim, J. Kim, Y. Jin, S. Shin.</p><h3><a href="https://aclanthology.org/2025.findings-naacl.64/" target="_blank" rel="noreferrer">Claim-Guided Textual Backdoor Attack for Practical Applications</a></h3><p class="pub-venue">The 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NACCL 2025 Findings)</p></div></li>
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors">J. Kim, <strong>M. Song</strong>, S.H. Na, S. Shin.</p><h3><a href="https://aclanthology.org/2025.findings-naacl.71/" target="_blank" rel="noreferrer">Obliviate: Neutralizing Task-Agnostic Backdoors within the Parameter-Efficient Fine-Tuning Paradigm</a></h3><p class="pub-venue">The 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NACCL 2025 Findings)</p></div></li>
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors"><strong>M. Song</strong>, E. Jang, J. Kim, S. Shin.</p><h3><a href="https://dl.acm.org/doi/10.1145/3690624.3709183" target="_blank" rel="noreferrer">Covering Cracks in Content Moderation: Delexicalized Distant Supervision for Illicit Drug Jargon Detection</a></h3><p class="pub-venue">31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2025)</p></div></li>
+            <li class="publication-item" data-type="conference"><span class="pub-label">[C]</span><div><p class="pub-authors">J. Kim, <strong>M. Song</strong>, M. Seo, Y. Jin, S. Shin.</p><h3><a href="https://ieeexplore.ieee.org/document/10646687?reason=concurrency" target="_blank" rel="noreferrer">PassREfinder: Credential Stuffing Risk Prediction by Representing Password Reuse between Websites on a Graph</a></h3><p class="pub-venue">2024 IEEE Symposium on Security and Privacy (SP) (Oakland 2024)</p></div></li>
+            <li class="publication-item" data-type="journal"><span class="pub-label">[J]</span><div><p class="pub-authors">J. Kim, <strong>M. Song</strong>, M. Seo, Y. Jin, S. Shin, J. Kim.</p><h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425036954" target="_blank" rel="noreferrer">PassREfinder-FL: Privacy-Preserving Credential Stuffing Risk Prediction via Graph-Based Federated Learning for Representing Password Reuse between Websites</a></h3><p class="pub-venue">Elsevier Expert Systems with Applications (ESWA)</p></div></li>
+            <li class="publication-item" data-type="journal"><span class="pub-label">[J]</span><div><p class="pub-authors">J. Choi, J. Kim, <strong>M. Song</strong>, H. Kim, N. Park, M. Seo, Y. Jin, S. Shin.</p><h3><a href="https://globals.ieice.org/en_transactions/information/10.1587/transinf.2021EDP7182/_p" target="_blank" rel="noreferrer">A Large-Scale Bitcoin Abuse Measurement and Clustering Analysis Utilizing Public Reports</a></h3><p class="pub-venue">IEICE Transactions on Information and Systems</p></div></li>
+            <li class="publication-item" data-type="review"><span class="pub-label">[U]</span><div><p class="pub-authors"><strong>M. Song</strong>, J. Kim, M. Kang, H. Kim, S. Shin, S. Son.</p><h3>Graphs Don't Stay Secret: Practical Subgraph Reconstruction Attacks on Defended Graph RAG</h3><p class="pub-venue">Under Review</p></div></li>
+            <li class="publication-item" data-type="review"><span class="pub-label">[U]</span><div><p class="pub-authors">Y. Kim, <strong>M. Song</strong>, S. Shin.</p><h3>SkillMutator: Benchmarking and Defending Language-and-Code Cross-modal Attacks on LLM Agent Skills</h3><p class="pub-venue">Under Review</p></div></li>
+            <li class="publication-item" data-type="review"><span class="pub-label">[U]</span><div><p class="pub-authors">K. Kim, J. Cui, <strong>M. Song</strong>, S. Shin.</p><h3><a href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Exploring the Familiar Taste of Toxicity: A Causal Influence Analysis of Toxic Comments on Internet Forums</a></h3><p class="pub-venue">Invited to Major Revision at IEEE Transactions on Knowledge and Data Engineering (TKDE)</p></div></li>
+            <li class="publication-item" data-type="review"><span class="pub-label">[U]</span><div><p class="pub-authors">H. Kim, J. Cui, <strong>M. Song</strong>, H. Hwan, S. Shin, K. Lee, X. Liao.</p><h3>SCRIPTIOC-BENCH: A Benchmark for Recognizing Actionable Threat Intelligence from Script-Based Malware using LLMs</h3><p class="pub-venue">Under Review</p></div></li>
+            <li class="publication-item" data-type="review"><span class="pub-label">[U]</span><div><p class="pub-authors">K. Kim, S.H. Na, <strong>M. Song</strong>, S. Shin.</p><h3><a href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Global Meta-path-level Counterfactual Explanation for Heterogeneous Graph Neural Networks by Path Exclusion</a></h3><p class="pub-venue">Under Review</p></div></li>
+            <li class="publication-item" data-type="review"><span class="pub-label">[U]</span><div><p class="pub-authors">J. Kim, M. Seo, <strong>M. Song</strong>, S. Shin, J. Kim.</p><h3><a href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">To Make Each Account Count: Exploring Credential Data Breach Threats through Victim-driven Analysis</a></h3><p class="pub-venue">Under Review</p></div></li>
+          </ol>
         </div>
       </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-heading"><div class="container section-grid"><div class="section-heading"><p class="eyebrow">Experience</p><h2 id="experience-heading">Professional experience</h2></div><div class="timeline"><article class="entry-card"><div class="entry-head"><h3>S2W</h3><p>July 2022 - Feb 2023</p></div><p class="role-line">Research Intern @ AI Team, South Korea</p><ul class="detail-list"><li>Illicit drug jargon detection: analyzed illicit drug-related discussions and developed an LLM-based content moderation framework, independently capturing contextual and lexical characteristics.</li></ul></article></div></div></section>
+
+      <section class="section" id="awards" aria-labelledby="awards-heading"><div class="container section-grid"><div class="section-heading"><p class="eyebrow">Honors and Awards</p><h2 id="awards-heading">Recognition</h2></div><div class="award-list">
+        <article class="award-card"><div><h3>Distinguished Paper Award</h3><p>Annual Computer Security Applications Conference (ACSAC)</p><p>MoEvil: Poisoning Expert to Compromise the Safety of Mixture-of-Experts LLMs</p></div><span>2025</span></article>
+        <article class="award-card"><div><h3>4th Prize, 2025 Cybersecurity Paper Competition</h3><p>Korean Association of Cybersecurity Studies (KACS)</p><p>Poisoning Expert to Compromise the Safety of Mixture-of-Experts LLMs</p></div><span>2025</span></article>
+        <article class="award-card"><div><h3>2nd Prize, 2023 Cybersecurity Paper Competition</h3><p>Korean Association of Cybersecurity Studies (KACS)</p><p>Graph-based Deep Learning Framework for Credential Stuffing Risk Prediction</p></div><span>2023</span></article>
+        <article class="award-card"><div><h3>4th Prize, 2023 Cybersecurity Paper Competition</h3><p>Korean Association of Cybersecurity Studies (KACS)</p><p>Delexicalized Distant Supervision for Illicit Drug Jargon Detection</p></div><span>2023</span></article>
+        <article class="award-card"><div><h3>4th Prize, 2023 Cybersecurity Paper Competition</h3><p>Korean Association of Cybersecurity Studies (KACS)</p><p>Understanding the Occurrence and Impact of Credential Data Breach</p></div><span>2023</span></article>
+        <article class="award-card"><div><h3>Cum Laude</h3><p>Korea Advanced Institute of Science and Technology (KAIST)</p></div><span>2021</span></article>
+        <article class="award-card"><div><h3>Academic Achievement Award: Salutatorian</h3><p>Korea Advanced Institute of Science and Technology (KAIST)</p></div><span>2019 Spring</span></article>
+        <article class="award-card"><div><h3>Dean's List</h3><p>Industrial and Systems Engineering (ISysE, KAIST)</p></div><span>2019 Spring</span></article>
+      </div></div></section>
+
+      <section class="section compact-section" id="languages" aria-labelledby="languages-heading"><div class="container section-grid"><div class="section-heading"><p class="eyebrow">Languages</p><h2 id="languages-heading">Languages</h2></div><ul class="language-list"><li><strong>Korean</strong><span>Native</span></li><li><strong>English</strong><span>Fluent</span></li></ul></div></section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-card"><div><p class="eyebrow">Contact</p><h2 id="contact-heading">For collaborations or inquiries, please get in touch.</h2></div><div class="link-row"><a class="button primary" href="mailto:minkyoo9@kaist.ac.kr">Mail</a><a class="button" href="https://www.linkedin.com/in/minkyoo-song-366aa7348/" target="_blank" rel="noreferrer">LinkedIn</a><a class="button" href="https://scholar.google.com/citations?user=PCK7c-MAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a></div></div></section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="current-year"></span> Minkyoo Song · Crafted for academic and professional use.</p>
-      </div>
-    </footer>
+    <footer class="site-footer"><div class="container footer-inner"><p>&copy; <span id="current-year"></span> Minkyoo Song</p><p>Synced with CV: January 2026</p></div></footer>
   </div>
   <script src="script.js" defer></script>
 </body>

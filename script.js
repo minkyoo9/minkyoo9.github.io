@@ -29,6 +29,10 @@ minorStyle.textContent = `
     object-fit: contain;
   }
 
+  #hero-heading {
+    font-size: 3.22rem;
+  }
+
   .section-heading h2 {
     color: var(--accent);
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -65,7 +69,17 @@ minorStyle.textContent = `
     font-weight: 800;
   }
 
+  @media (max-width: 900px) {
+    #hero-heading {
+      font-size: 2.59rem;
+    }
+  }
+
   @media (max-width: 640px) {
+    #hero-heading {
+      font-size: 2.1rem;
+    }
+
     .section-heading h2,
     .contact-card h2 {
       font-size: 1.25rem;

@@ -134,6 +134,50 @@ document.querySelectorAll(".site-footer p").forEach((item) => {
   }
 });
 
+const experienceTimeline = document.querySelector("#experience .timeline");
+if (experienceTimeline && !experienceTimeline.querySelector("[data-service='reviewer']")) {
+  const serviceRoles = [
+    {
+      title: "Reviewer",
+      items: [
+        "IEEE Transactions on Information Forensics and Security (TIFS)",
+        "IEEE Transactions on Dependable and Secure Computing (TDSC)",
+        "The Web Conference (WWW) 2024",
+        "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2024",
+        "ACL Rolling Review (ARR) 2024, 2025",
+      ],
+    },
+    {
+      title: "External Reviewer",
+      items: [
+        "The Web Conference (WWW) 2025-2026",
+        "ACM Conference on Computer and Communications Security (CCS) 2025",
+        "IEEE International Conference on Distributed Computing Systems (ICDCS) 2025-2026",
+        "International Symposium on Research in Attacks, Intrusions and Defenses (RAID) 2025-2026",
+        "Annual Computer Security Applications Conference (ACSAC) 2025-2026",
+      ],
+    },
+  ];
+
+  serviceRoles.forEach((role) => {
+    const card = document.createElement("article");
+    card.className = "entry-card";
+    card.dataset.service = role.title.toLowerCase().replace(/\s+/g, "-");
+
+    const items = role.items.map((item) => `<li>${item}</li>`).join("");
+    card.innerHTML = `
+      <div class="entry-head">
+        <h3>${role.title}</h3>
+      </div>
+      <ul class="detail-list">
+        ${items}
+      </ul>
+    `;
+
+    experienceTimeline.appendChild(card);
+  });
+}
+
 const conferencePattern = /\((CCS 2026|ICLR 2026|ACSAC 2025|SECURITY 2025|NACCL 2025 Findings|KDD 2025|SP|Oakland 2024)\)/g;
 document.querySelectorAll(".publication-item[data-type='conference'] .pub-venue").forEach((venue) => {
   const formatted = venue.textContent

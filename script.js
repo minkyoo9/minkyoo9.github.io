@@ -3,6 +3,97 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
+const minorStyle = document.createElement("style");
+minorStyle.textContent = `
+  .section-grid {
+    align-items: start;
+  }
+
+  .section-heading h2 {
+    color: var(--accent);
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .interest-list {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .interest-list li {
+    line-height: 1.2;
+  }
+
+  .contact-card h2 {
+    font-size: 1.45rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .contact-note {
+    max-width: 620px;
+    margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.98rem;
+  }
+
+  @media (max-width: 640px) {
+    .section-heading h2,
+    .contact-card h2 {
+      font-size: 1.25rem;
+    }
+  }
+`;
+document.head.appendChild(minorStyle);
+
+const updatedEl = document.querySelector(".updated");
+if (updatedEl) {
+  updatedEl.textContent = "Last update: June 2026";
+}
+
+const singleSectionHeadings = [
+  ["research-heading", "Research Interest"],
+  ["education-heading", "Education"],
+  ["experience-heading", "Experience"],
+  ["awards-heading", "Honors and Awards"],
+  ["languages-heading", "Languages"],
+];
+
+singleSectionHeadings.forEach(([id, text]) => {
+  const heading = document.getElementById(id);
+  if (heading) {
+    heading.textContent = text;
+  }
+
+  const eyebrow = heading?.closest(".section-heading")?.querySelector(".eyebrow");
+  if (eyebrow) {
+    eyebrow.remove();
+  }
+});
+
+const contactHeading = document.getElementById("contact-heading");
+if (contactHeading) {
+  contactHeading.textContent = "Contact";
+  const contactIntro = contactHeading.closest("div");
+  contactIntro?.querySelector(".eyebrow")?.remove();
+
+  if (contactIntro && !contactIntro.querySelector(".contact-note")) {
+    const note = document.createElement("p");
+    note.className = "contact-note";
+    note.textContent = "For research inquiries and collaborations, please contact me by email.";
+    contactHeading.insertAdjacentElement("afterend", note);
+  }
+}
+
+document.querySelectorAll(".site-footer p").forEach((item) => {
+  if (item.textContent.includes("Synced with CV")) {
+    item.textContent = "Synced with CV: June 2026";
+  }
+});
+
 const navLinks = Array.from(document.querySelectorAll(".site-nav a[href^='#']"));
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))

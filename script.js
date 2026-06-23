@@ -6,8 +6,9 @@ if (yearEl) {
 const minorStyle = document.createElement("style");
 minorStyle.textContent = `
   .section-grid {
-    grid-template-columns: 240px minmax(0, 1fr);
+    grid-template-columns: 1fr;
     align-items: start;
+    gap: 20px;
   }
 
   .hero-aside {
@@ -69,6 +70,7 @@ if (updatedEl) {
 const singleSectionHeadings = [
   ["research-heading", "Research Interest"],
   ["education-heading", "Education"],
+  ["publications-heading", "Publications"],
   ["experience-heading", "Experience"],
   ["awards-heading", "Honors and Awards"],
   ["languages-heading", "Languages"],
@@ -112,12 +114,6 @@ document.querySelectorAll(".publication-item[data-type='conference'] .pub-venue"
     .replace(conferencePattern, "<strong>($1)</strong>")
     .replace(/Distinguished Paper Award/g, '<strong class="award-highlight">Distinguished Paper Award</strong>');
   venue.innerHTML = formatted;
-});
-
-document.querySelectorAll(".award-card h3").forEach((heading) => {
-  if (heading.textContent.trim() === "Distinguished Paper Award") {
-    heading.innerHTML = '<span class="award-highlight">Distinguished Paper Award</span>';
-  }
 });
 
 const navLinks = Array.from(document.querySelectorAll(".site-nav a[href^='#']"));

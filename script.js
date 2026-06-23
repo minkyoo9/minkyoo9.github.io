@@ -6,6 +6,7 @@ if (yearEl) {
 const minorStyle = document.createElement("style");
 minorStyle.textContent = `
   .section-grid {
+    grid-template-columns: 240px minmax(0, 1fr);
     align-items: start;
   }
 

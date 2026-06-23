@@ -40,6 +40,11 @@ minorStyle.textContent = `
     font-size: 0.98rem;
   }
 
+  .award-highlight {
+    color: #8b1e1e;
+    font-weight: 800;
+  }
+
   @media (max-width: 640px) {
     .section-heading h2,
     .contact-card h2 {
@@ -91,6 +96,20 @@ if (contactHeading) {
 document.querySelectorAll(".site-footer p").forEach((item) => {
   if (item.textContent.includes("Synced with CV")) {
     item.textContent = "Synced with CV: June 2026";
+  }
+});
+
+const conferencePattern = /\((CCS 2026|ICLR 2026|ACSAC 2025|SECURITY 2025|NACCL 2025 Findings|KDD 2025|SP|Oakland 2024)\)/g;
+document.querySelectorAll(".publication-item[data-type='conference'] .pub-venue").forEach((venue) => {
+  const formatted = venue.textContent
+    .replace(conferencePattern, "<strong>($1)</strong>")
+    .replace(/Distinguished Paper Award/g, '<strong class="award-highlight">Distinguished Paper Award</strong>');
+  venue.innerHTML = formatted;
+});
+
+document.querySelectorAll(".award-card h3").forEach((heading) => {
+  if (heading.textContent.trim() === "Distinguished Paper Award") {
+    heading.innerHTML = '<span class="award-highlight">Distinguished Paper Award</span>';
   }
 });
 

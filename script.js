@@ -178,7 +178,7 @@ if (experienceTimeline && !experienceTimeline.querySelector("[data-service='revi
   });
 }
 
-const conferencePattern = /\((CCS 2026|ICLR 2026|ACSAC 2025|SECURITY 2025|NACCL 2025 Findings|KDD 2025|SP|Oakland 2024)\)/g;
+const conferencePattern = /\((CCS 2026|ICLR 2026|ACSAC 2025|SECURITY 2025|NAACL 2025 Findings|KDD 2025|SP|Oakland 2024)\)/g;
 document.querySelectorAll(".publication-item[data-type='conference'] .pub-venue").forEach((venue) => {
   const formatted = venue.textContent
     .replace(conferencePattern, "<strong>($1)</strong>")

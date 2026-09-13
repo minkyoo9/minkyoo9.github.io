@@ -88,11 +88,6 @@ minorStyle.textContent = `
 `;
 document.head.appendChild(minorStyle);
 
-const updatedEl = document.querySelector(".updated");
-if (updatedEl) {
-  updatedEl.textContent = "Last update: June 2026";
-}
-
 const singleSectionHeadings = [
   ["research-heading", "Research Interest"],
   ["education-heading", "Education"],
@@ -127,12 +122,6 @@ if (contactHeading) {
     contactHeading.insertAdjacentElement("afterend", note);
   }
 }
-
-document.querySelectorAll(".site-footer p").forEach((item) => {
-  if (item.textContent.includes("Synced with CV")) {
-    item.textContent = "Synced with CV: June 2026";
-  }
-});
 
 const experienceTimeline = document.querySelector("#experience .timeline");
 if (experienceTimeline && !experienceTimeline.querySelector("[data-service='reviewer']")) {
@@ -178,7 +167,7 @@ if (experienceTimeline && !experienceTimeline.querySelector("[data-service='revi
   });
 }
 
-const conferencePattern = /\((CCS 2026|ICLR 2026|ACSAC 2025|SECURITY 2025|NAACL 2025 Findings|KDD 2025|SP|Oakland 2024)\)/g;
+const conferencePattern = /\((CCS 2026|ICLR 2026|ACSAC 2026|ACSAC 2025|SECURITY 2025|NAACL 2025 Findings|KDD 2025|SP|Oakland 2024)\)/g;
 document.querySelectorAll(".publication-item[data-type='conference'] .pub-venue").forEach((venue) => {
   const formatted = venue.textContent
     .replace(conferencePattern, "<strong>($1)</strong>")

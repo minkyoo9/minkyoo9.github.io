@@ -556,6 +556,21 @@ h1 {
     padding-top: 48px;
   }
 
+  .hero-aside {
+    display: contents;
+  }
+
+  .portrait {
+    order: -2;
+    width: 50vw;
+    max-width: 220px;
+    justify-self: center;
+  }
+
+  .hero-copy {
+    order: -1;
+  }
+
   h1 {
     font-size: 3rem;
   }

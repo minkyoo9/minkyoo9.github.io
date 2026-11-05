@@ -129,7 +129,7 @@ if (experienceTimeline && !experienceTimeline.querySelector("[data-service='revi
     {
       title: "Program Committee",
       items: [
-        "<strong>STALA 2027</strong> co-located with NDSS 2027",
+        "STALA 2027 (co-located with NDSS 2027)",
       ],
     },
     {

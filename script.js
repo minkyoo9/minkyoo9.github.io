@@ -137,7 +137,7 @@ if (experienceTimeline && !experienceTimeline.querySelector("[data-service='revi
       items: [
         "IEEE Transactions on Information Forensics and Security (TIFS)",
         "IEEE Transactions on Dependable and Secure Computing (TDSC)",
-        "The ACM Web Conference (WWW) 2024, 2027",
+        "The ACM Web Conference (WWW) 2024",
         "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD) 2024",
         "ACL Rolling Review (ARR) 2024, 2025",
       ],
